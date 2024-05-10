@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trade", "Trade.csproj", "{2D3027A1-A24E-4E3C-8DA6-13B5FC252164}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameZone", "..\GameZone\GameZone.csproj", "{9C6D2716-FBBA-4EA4-95D5-6FB76B536B19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D3027A1-A24E-4E3C-8DA6-13B5FC252164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3027A1-A24E-4E3C-8DA6-13B5FC252164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3027A1-A24E-4E3C-8DA6-13B5FC252164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3027A1-A24E-4E3C-8DA6-13B5FC252164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C6D2716-FBBA-4EA4-95D5-6FB76B536B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C6D2716-FBBA-4EA4-95D5-6FB76B536B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C6D2716-FBBA-4EA4-95D5-6FB76B536B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C6D2716-FBBA-4EA4-95D5-6FB76B536B19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8F5B617-CCC4-4236-9A35-2C77E108BC49}
+	EndGlobalSection
+EndGlobal

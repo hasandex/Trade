@@ -1,0 +1,26 @@
+﻿@model Category
+
+@{
+    var state = "Create Category";
+}
+
+@{
+    if (Model != null)
+        state = "Edit";
+}
+
+
+        <form asp-action="Upsert" method="post">
+    @{
+        if (state == "Edit")
+        {
+            <input type="hidden" asp-for="Id"   />
+        }
+    }
+            <div>    
+                <label asp-for="Name" class="form-label mt-4"></label>
+                <input asp-for="Name" type="text" class="form-control" placeholder="Enter Category">
+                <span asp-validation-for="Name" class="text text-danger"></span>
+            </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

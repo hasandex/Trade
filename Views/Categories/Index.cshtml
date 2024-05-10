@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Category> 
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+        <div>
+            <a asp-action="Upsert"> Create Category </a>
+
+        </div>
+
+        @if (!Model.Any())
+        {
+            <div class="alert alert-warning">
+                <h4 class="alert-heading">No Categories!</h4>
+                <p class="mb-0">No Categories were added yet</p>
+            </div>
+        }
+        else
+        {
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Category Name</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr class="table-active">
+                        <td>
+                            @category.Name
+                        </td>
+
+                        <td>
+                        <a asp-action="Upsert" asp-route-categoryId="@category.Id" class="btn btn-primary me-2 rounded rounded-3"> <i class="bi bi-pencil-fill"></i> </a>
+                        <a asp-action="Delete" aps-route-id="@category.Id" class="btn btn-danger rounded rounded-3"> <i class="bi bi-trash3-fill"></i> </a>
+                        </td>
+
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+        }
