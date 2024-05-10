@@ -56,7 +56,7 @@ namespace Trade.Controllers
 
                 return RedirectToAction("Index", "Categories"); // Redirect to the appropriate view after successful create/update
             }
-            //hellosssasdasdas
+            //hellosssasdasdasa
             return View(category);
         }
     }
