@@ -17,6 +17,12 @@ namespace Trade.Repo
           return _appDbContext.SaveChanges();
         }
 
+        public int Delete(Category category)
+        {
+            _appDbContext.Categories.Remove(category);
+            return _appDbContext.SaveChanges();
+        }
+
         public IEnumerable<Category> GetAll()
         {
             return _appDbContext.Categories.ToList();

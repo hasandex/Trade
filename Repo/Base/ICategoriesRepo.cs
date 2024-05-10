@@ -7,6 +7,7 @@
        Category GetByName(string name);
        int Add(Category category);
        int Update(Category category);
+       int Delete(Category category);
 
     }
 }

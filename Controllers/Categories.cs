@@ -56,8 +56,19 @@ namespace Trade.Controllers
 
                 return RedirectToAction("Index", "Categories"); // Redirect to the appropriate view after successful create/update
             }
-            //hellosssasdasdasa
             return View(category);
         }
+        
+        public IActionResult Delete(int categoryId)
+        {
+            var categore = _categoriesRepo.GetById(categoryId);
+            if(categore != null)
+            {
+                _categoriesRepo.Delete(categore);
+                return RedirectToAction("Index");
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }
